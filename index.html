@@ -496,4 +496,14 @@
         btn.textContent = "Enviado ✓";
         btn.style.background = "#2a7a58";
       } else {
-        btn.textContent = "Erro — tente novamente";
+        btn.textContent = "Erro — tente novamente";        btn.disabled = false;
+      }
+    } catch(err) {
+      btn.textContent = "Erro — tente novamente";
+      btn.disabled = false;
+    }
+  });
+  window.addEventListener("scroll",()=>{const n=document.getElementById("main-nav");n.style.padding=window.scrollY>50?"12px 60px":"18px 60px";});
+</script>
+</body>
+</html>
